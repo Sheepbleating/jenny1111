@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>期末個人網頁</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="layout.css">
+<style>
+  .colored-background {
+    background-color: #009393;
+    padding: 10px;
+  }
+
+  #headerpic img {
+    margin-top: 50px;
+  }
+
+  #headercnt {
+    text-align: center;
+  }
+
+  .colored-background {
+    color: #FFFFFF;
+  }
+
+  .colored-background span:hover {
+    color: #D0D0D0;
+  }
+
+  .colored-background strong {
+    font-size: 24px;
+  }
+
+  .colored-background span {
+    cursor: pointer;
+  }
+
+  .center-image {
+    margin: 0 auto;
+    display: block;
+  }
+
+  #about-me {
+    text-align: center;
+  }
+
+  #headerpic img {
+    width: 100%;
+    display: none;
+  }
+
+  .hover-image {
+    width: 3%;
+    margin-right: 5px;
+  }
+
+  .hover-image:hover {
+    content: url('7.png');
+  }
+
+  .hover-image-2:hover {
+    content: url('6.png');
+  }
+
+  .hover-image-3:hover {
+    content: url('5.png');
+  }
+
+  .hover-image {
+    cursor: pointer;
+  }
+
+  .hover-image1 {
+    cursor: pointer;
+  }
+
+  .hover-image2 {
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div data-aos="fade-right">
+        <div class="colored-background">
+          <strong>Color</strong>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span onclick="document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' });">About&nbsp;</span>&nbsp; &nbsp;<span onclick="document.getElementById('work-classification').scrollIntoView({ behavior: 'smooth' });">Work classification</span>&nbsp;<span onclick="document.getElementById('contact-method').scrollIntoView({ behavior: 'smooth' });">&nbsp; &nbsp;Contact method</span>
+        </div>
+      </div>
+    </div>
+  <br>
+    <div id="headerpic">
+      <img src="img_3.jpg" alt="Image 1">
+      <img src="img_4.jpg" alt="Image 2">
+    </div>
+    <script>
+      var images = document.querySelectorAll("#headerpic img");
+      var index = 0;
+      images[index].style.display = "block";
+      function switchImage() {
+        images[index].style.display = "none";
+        index = (index + 1) % images.length;
+        images[index].style.display = "block";
+      }
+      setInterval(switchImage, 3000);
+    </script>
+    <br><br><br>
+    <div  data-aos="fade-down" data-aos-offset="300">
+      <div id="center">
+        <img src="4.png" width="90%" alt="" class="center-image"/>
+      </div>
+     <div id="headercnt"><br></div>
+    <div id="about-me" data-aos="fade-down" data-aos-offset="300">
+        <br><span style="font-size: larger; font-weight: bold;">關於我</span><br><br>
+        <p>*我是一隻可愛的小羊咩咩咩*</p>
+        <p>*因為誤打誤撞*</p>
+        <p>*就開啟有趣的繪畫人生*</p>
+        <p>*但就莫名的變成被人生設計*</p>
+        <p>*現在*</p>
+        <p>*默默地懷疑人生*</p>
+        <br><br>
+      </div>
+     <img src="4.png" width="90%" alt="" class="center-image"/>
+    </div>
+    <br><br><br><br>
+    <div id="work-classification" data-aos="fade-down" data-aos-offset="300" style="text-align: center;">
+      <div style="display: inline-block; margin-right: 10px;"
+        onmouseover="changeImage(this, '7.jpg', '水彩')"
+        onmouseout="restoreImage(this, '3.jpg', '水彩')">
+        <img src="3.jpg" width="60%" alt="">		  
+       <p style="font-size: 24px;"><strong>水彩</strong></p>
+     </div>
+   <div style="display: inline-block; margin-right: 10px;"
+        onmouseover="changeImage(this, '5.jpg', '素描')"
+        onmouseout="restoreImage(this, '4.jpg', '素描')">
+        <img src="4.jpg" width="60%" alt="">
+        <p style="font-size: 24px;"><strong>素描</strong></p>
+      </div>
+      <div style="display: inline-block; margin-right: 10px;"
+        onmouseover="changeImage(this, '6.jpg', '人像')"
+        onmouseout="restoreImage(this, '2.jpg', '人像')">
+        <img src="2.jpg" width="60%" alt="">
+		  
+        <p style="font-size: 24px;"><strong>3D</strong></p>
+      </div>
+    </div>
+    <br><br><br>
+    <div id="footer">
+      <br>
+    </div>
+    <div id="contact-method" style="background-color: #009393; padding: 10px;">
+      <div style="background-color: #009393; padding: 10px;">
+        <a href="https://www.facebook.com/profile.php?id=100021965229794" target="_blank">
+          <img src="1.png" class="hover-image" alt="" style="margin-right: 5px;">
+        </a>
+        <a href="https://line.me/ti/p/KborXM_xdX" target="_blank">
+          <img src="2.png" class="hover-image hover-image-2" alt="" style="margin-right: 5px;">
+        </a>
+        <a href="https://www.instagram.com/yayang1479?utm_source=ig_web_button_share_sheet&igshid=ZDNlZDc0MzIxNw==" target="_blank">
+          <img src="3.png" class="hover-image hover-image-3" alt="" style="margin-right: 5px;">
+        </a>
+        <br>
+        <span style="font-size: smaller; color: white;">郵件:511120238@365.fju.edu.tw</span><br>
+        <span style="font-size: smaller; color: white;">地址:242新北市新莊區中正路510號</span><br>
+        <span style="font-size: smaller; color: white;">電話:0900000000</span>
+      </div>
+    </div>
+    <script>
+      function changeImage(element, newSrc, newAlt) {
+        const img = element.querySelector('img');
+        img.src = newSrc;
+        img.alt = newAlt;
+      }
+
+      function restoreImage(element, originalSrc, originalAlt) {
+        const img = element.querySelector('img');
+        img.src = originalSrc;
+        img.alt = originalAlt;
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
+
